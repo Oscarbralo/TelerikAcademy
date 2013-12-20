@@ -16,14 +16,8 @@ namespace ConsoleApplication3
             for (int i = 0; i < number; i++)
             {
                 int loopNumber = int.Parse(Console.ReadLine());
-                if (loopNumber > max)
-                {
-                    max = loopNumber;
-                }
-                if (loopNumber < min)
-                {
-                    min = loopNumber;
-                }
+                max = Math.Max(max, loopNumber);
+                min = Math.Min(min, loopNumber);
             }
 
             Console.WriteLine("Max: {0}\nMin: {1}", max, min);
