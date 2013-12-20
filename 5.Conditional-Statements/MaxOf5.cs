@@ -13,26 +13,7 @@ namespace ConsoleApplication7
             int three = int.Parse(Console.ReadLine());
             int four = int.Parse(Console.ReadLine());
             int five = int.Parse(Console.ReadLine());
-
-            int large = Int32.MinValue;
-
-            if (one > two)
-            {
-                large = one;
-            }
-            if (three > large)
-            {
-                large = three;
-            }
-            if (four > large)
-            {
-                large = four;
-            }
-            if (five > large)
-            {
-                large = five;
-            }
-            Console.WriteLine(large);
+            Console.WriteLine(Math.Max(one, Math.Max(two, Math.Max(three, Math.Max(four, five)))));
         }
     }
 }
